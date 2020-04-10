@@ -1,7 +1,9 @@
-bucket_size = 2500 # mm
-pieces_to_fit = [1200, 900, 300, 700, 800, 100, 400, 110, 2000, 1200, 20, 90, 1100]
-slag = 2
+# just change these values according to your values
+bucket_size = 2500 # mm 
+pieces_to_fit = [1200, 900, 300, 700, 800, 100, 400, 110, 2000, 1200, 20, 90, 1100] # a list of piece lengths in mm
+slag = 2 # mm to account for cutting. can also be set to zero.
 
+# do not change this values:
 def add_bucket(buckets, index):
     buckets[index] = dict()
     buckets[index]["sum"] = 0
